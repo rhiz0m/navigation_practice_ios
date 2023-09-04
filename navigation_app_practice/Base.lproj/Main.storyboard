@@ -29,7 +29,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rv3-W3-VvU">
-                                        <rect key="frame" x="0.0" y="128" width="220.66666666666663" height="104"/>
+                                        <rect key="frame" x="0.0" y="128" width="220.66666666666666" height="104"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Registreringsformul">
                                                 <attributes>
@@ -134,6 +134,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="127.48091603053435" y="-27.464788732394368"/>
+        </scene>
+        <!--Passed View Controller-->
+        <scene sceneID="0BO-vH-1sl">
+            <objects>
+                <viewController id="jUj-VE-Fwu" customClass="PassedViewController" customModule="navigation_app_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5gD-F0-5E6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have passed the test!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqd-IM-Wil">
+                                <rect key="frame" x="98.666666666666686" y="415.66666666666669" width="196" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0qP-ZP-ffw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wqd-IM-Wil" firstAttribute="centerX" secondItem="5gD-F0-5E6" secondAttribute="centerX" id="Okg-Cf-6zQ"/>
+                            <constraint firstItem="Wqd-IM-Wil" firstAttribute="centerY" secondItem="5gD-F0-5E6" secondAttribute="centerY" id="QoB-8a-BNP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VBi-ZB-4vf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="897" y="-20"/>
+        </scene>
+        <!--Failed View Controller-->
+        <scene sceneID="XGB-2Q-yfS">
+            <objects>
+                <viewController id="LFe-h0-dNZ" customClass="FailedViewController" customModule="navigation_app_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Epc-MS-G8S">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have failed the test!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSZ-2G-RKr">
+                                <rect key="frame" x="105.66666666666669" y="415.66666666666669" width="182" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4T2-xZ-Kh3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JSZ-2G-RKr" firstAttribute="centerX" secondItem="Epc-MS-G8S" secondAttribute="centerX" id="9Bg-Op-huB"/>
+                            <constraint firstItem="JSZ-2G-RKr" firstAttribute="centerY" secondItem="Epc-MS-G8S" secondAttribute="centerY" id="MSd-fQ-qwS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Esu-Vr-GY6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1694" y="-20"/>
         </scene>
     </scenes>
     <resources>
