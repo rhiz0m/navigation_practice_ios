@@ -110,6 +110,7 @@
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 4" translatesAutoresizingMaskIntoConstraints="NO" id="uKd-k2-PDb">
                                         <rect key="frame" x="55.666666666666671" y="550" width="109.00000000000001" height="106"/>
+                                        <gestureRecognizers/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -130,6 +131,10 @@
                             <constraint firstItem="bDs-T8-o6w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="yQ4-iY-PD1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="jUj-VE-Fwu" kind="show" id="B1z-1P-UHk"/>
+                        <segue destination="LFe-h0-dNZ" kind="show" id="N1v-u0-YId"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -140,11 +145,11 @@
             <objects>
                 <viewController id="jUj-VE-Fwu" customClass="PassedViewController" customModule="navigation_app_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5gD-F0-5E6">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have passed the test!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqd-IM-Wil">
-                                <rect key="frame" x="98.666666666666686" y="415.66666666666669" width="196" height="21"/>
+                                <rect key="frame" x="98.666666666666686" y="410.66666666666669" width="196" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -157,21 +162,22 @@
                             <constraint firstItem="Wqd-IM-Wil" firstAttribute="centerY" secondItem="5gD-F0-5E6" secondAttribute="centerY" id="QoB-8a-BNP"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="s4w-IF-vAu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VBi-ZB-4vf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="897" y="-20"/>
+            <point key="canvasLocation" x="1031" y="-449"/>
         </scene>
         <!--Failed View Controller-->
         <scene sceneID="XGB-2Q-yfS">
             <objects>
                 <viewController id="LFe-h0-dNZ" customClass="FailedViewController" customModule="navigation_app_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Epc-MS-G8S">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have failed the test!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSZ-2G-RKr">
-                                <rect key="frame" x="105.66666666666669" y="415.66666666666669" width="182" height="21"/>
+                                <rect key="frame" x="105.66666666666669" y="410.66666666666669" width="182" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -184,10 +190,11 @@
                             <constraint firstItem="JSZ-2G-RKr" firstAttribute="centerY" secondItem="Epc-MS-G8S" secondAttribute="centerY" id="MSd-fQ-qwS"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="06R-QX-LJo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Esu-Vr-GY6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1694" y="-20"/>
+            <point key="canvasLocation" x="1031" y="289"/>
         </scene>
     </scenes>
     <resources>
