@@ -69,7 +69,6 @@
                                                     <constraint firstAttribute="height" constant="31" id="UMU-va-qKG"/>
                                                     <constraint firstAttribute="width" constant="208" id="wBG-R3-TOj"/>
                                                 </constraints>
-                                                <color key="textColor" systemColor="placeholderTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -133,9 +132,15 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="age" destination="ZNr-MF-MsP" id="Svk-sz-0Rh"/>
                         <outlet property="ellipse1" destination="b0R-oc-zL8" id="irh-kW-jBB"/>
-                        <segue destination="jUj-VE-Fwu" kind="show" id="B1z-1P-UHk"/>
-                        <segue destination="LFe-h0-dNZ" kind="show" id="N1v-u0-YId"/>
+                        <outlet property="epost" destination="Ryi-KL-NK7" id="gcD-DX-dRA"/>
+                        <outlet property="lbl_age" destination="ef6-ND-I0L" id="Qrc-Hy-dUw"/>
+                        <outlet property="lbl_epost" destination="OTK-tc-Arq" id="fRF-oy-dGS"/>
+                        <outlet property="lbl_name" destination="5g3-zc-KpG" id="9Yw-8F-G2L"/>
+                        <outlet property="name" destination="vf1-ap-lF6" id="kWw-Rn-vkY"/>
+                        <segue destination="jUj-VE-Fwu" kind="show" identifier="fromHomeToPassed" id="B1z-1P-UHk"/>
+                        <segue destination="LFe-h0-dNZ" kind="show" identifier="fromHomeToFailed" id="N1v-u0-YId"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -178,6 +183,7 @@
         <!--Failed View Controller-->
         <scene sceneID="XGB-2Q-yfS">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Esu-Vr-GY6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="LFe-h0-dNZ" customClass="FailedViewController" customModule="navigation_app_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Epc-MS-G8S">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
@@ -199,7 +205,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="06R-QX-LJo"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Esu-Vr-GY6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1031" y="289"/>
         </scene>
@@ -211,9 +216,6 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="placeholderTextColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
