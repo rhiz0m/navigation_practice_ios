@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bDs-T8-o6w">
-                                <rect key="frame" x="86.333333333333329" y="114" width="220.66666666666669" height="656"/>
+                                <rect key="frame" x="86.333333333333329" y="114" width="220.66666666666669" height="630"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google-forms 1" translatesAutoresizingMaskIntoConstraints="NO" id="Fp9-kM-lj5">
                                         <rect key="frame" x="50.333333333333329" y="0.0" width="119.99999999999999" height="120"/>
@@ -105,20 +105,21 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipse 1" translatesAutoresizingMaskIntoConstraints="NO" id="b0R-oc-zL8">
-                                        <rect key="frame" x="86.333333333333329" y="470" width="47.999999999999986" height="72"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 4" translatesAutoresizingMaskIntoConstraints="NO" id="uKd-k2-PDb">
-                                        <rect key="frame" x="55.666666666666671" y="550" width="109.00000000000001" height="106"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipse 1" translatesAutoresizingMaskIntoConstraints="NO" id="b0R-oc-zL8" userLabel="ellipse1">
+                                        <rect key="frame" x="86.333333333333329" y="470" width="47.999999999999986" height="46"/>
                                         <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="C3f-8a-rg2" appends="YES" id="lmz-fA-NaD"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 4" translatesAutoresizingMaskIntoConstraints="NO" id="4eg-0O-BSM">
+                                        <rect key="frame" x="55.666666666666671" y="524" width="109.00000000000001" height="106"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="b0R-oc-zL8" firstAttribute="top" secondItem="bDs-T8-o6w" secondAttribute="top" constant="470" id="8Yu-gr-9Wf"/>
                                     <constraint firstItem="b0R-oc-zL8" firstAttribute="centerX" secondItem="bDs-T8-o6w" secondAttribute="centerX" id="Di5-yu-Qlz"/>
-                                    <constraint firstItem="uKd-k2-PDb" firstAttribute="centerX" secondItem="bDs-T8-o6w" secondAttribute="centerX" id="Ouc-qi-Lco"/>
                                     <constraint firstItem="OPR-ct-dZy" firstAttribute="centerX" secondItem="bDs-T8-o6w" secondAttribute="centerX" id="aTa-DI-3qy"/>
-                                    <constraint firstItem="uKd-k2-PDb" firstAttribute="top" secondItem="bDs-T8-o6w" secondAttribute="top" constant="550" id="c2f-AY-HtC"/>
                                     <constraint firstItem="OPR-ct-dZy" firstAttribute="top" secondItem="Fp9-kM-lj5" secondAttribute="bottom" constant="120" id="mSl-cj-brd"/>
                                     <constraint firstItem="Fp9-kM-lj5" firstAttribute="centerX" secondItem="bDs-T8-o6w" secondAttribute="centerX" id="uKp-AR-WQg"/>
                                 </constraints>
@@ -132,11 +133,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ellipse1" destination="b0R-oc-zL8" id="irh-kW-jBB"/>
                         <segue destination="jUj-VE-Fwu" kind="show" id="B1z-1P-UHk"/>
                         <segue destination="LFe-h0-dNZ" kind="show" id="N1v-u0-YId"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="C3f-8a-rg2">
+                    <connections>
+                        <action selector="tapEllipse:" destination="BYZ-38-t0r" id="FC0-qz-aDE"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="127.48091603053435" y="-27.464788732394368"/>
         </scene>
